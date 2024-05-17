@@ -1,28 +1,53 @@
 package org.kevin.servlet.parametros;
 
-import java.io.*;
 
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet {
-    private String message;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
-    public void init() {
-        message = "Hello World!";
-    }
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Arrays;
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+@WebServlet("/estudianteServlet")
+public class EstudianteServlet extends HttpServlet {
 
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
-    }
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html;charset=UTF-8");
 
-    public void destroy() {
+        String nombre = req.getParameter("nombre");
+        String apellido = req.getParameter("apellido");
+        int edad = Integer.parseInt(req.getParameter("edad"));
+        String curso = req.getParameter("curso");
+        String genero = req.getParameter("genero");
+        String[] lenguajes = req.getParameterValues("lenguajes");
+        String descripcion = req.getParameter("descripcion");
+
+        PrintWriter out = resp.getWriter();
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<meta charset=\"UTF-8\">");
+        out.println("<title>Datos del Estudiante</title>");
+        out.println("<link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" rel=\"stylesheet\">");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<div class=\"container mt-5\">");
+        out.println("<h1>Datos del Estudiante</h1>");
+        out.println("<p><strong>Nombre:</strong> " + nombre + "</p>");
+        out.println("<p><strong>Apellido:</strong> " + apellido + "</p>");
+        out.println("<p><strong>Edad:</strong> " + edad + "</p>");
+        out.println("<p><strong>Curso:</strong> " + curso + "</p>");
+        out.println("<p><strong>Género:</strong> " + genero + "</p>");
+        out.println("<p><strong>Lenguajes de Programación:</strong> " + (lenguajes != null ? Arrays.toString(lenguajes) : "Ninguno") + "</p>");
+        out.println("<p><strong>Descripción:</strong> " + descripcion + "</p>");
+        out.println("</div>");
+        out.println("</body>");
+        out.println("</html>");
     }
 }
