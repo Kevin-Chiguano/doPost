@@ -9,20 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76c444ae-5fa8-486c-ae9a-c49694df365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/kevin/servlet/parametros/EstudianteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+    <list default="true" id="76c444ae-5fa8-486c-ae9a-c49694df365d" name="Changes" comment="Obtener datos con el metodo post">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/kevin/servlet/parametros/EstudianteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kevin/servlet/parametros/EstudianteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kevin-Chiguano&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kevin-Chiguano/doPost.git&quot;,
+    &quot;accountId&quot;: &quot;3e2c72e3-6263-4c5e-9691-8cacebeb91d4&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -194,22 +196,32 @@
       <workItem from="1715951143803" duration="452000" />
       <workItem from="1715953540103" duration="2990000" />
       <workItem from="1715957368900" duration="3000" />
-      <workItem from="1715958035620" duration="2182000" />
+      <workItem from="1715958035620" duration="2666000" />
+      <workItem from="1715961552631" duration="403000" />
+      <workItem from="1715961974229" duration="58000" />
+      <workItem from="1715962047872" duration="200000" />
+      <workItem from="1715962284552" duration="633000" />
+      <workItem from="1716134648482" duration="507000" />
+      <workItem from="1716137712306" duration="1381000" />
+      <workItem from="1716209626873" duration="2858000" />
+      <workItem from="1716216408391" duration="12000" />
     </task>
+    <task id="LOCAL-00001" summary="Obtener datos con el metodo post">
+      <option name="closed" value="true" />
+      <created>1715961066092</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715961066092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/kevin/servlet/parametros/EstudianteServlet.java</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Obtener datos con el metodo post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Obtener datos con el metodo post" />
   </component>
 </project>
