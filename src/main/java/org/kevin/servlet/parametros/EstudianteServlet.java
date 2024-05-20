@@ -56,7 +56,7 @@ public class EstudianteServlet extends HttpServlet {
         out.println("<div class=\"container mt-5\">");
         out.println("<h1>Datos Personales</h1>");
         out.println("<p><strong>Nombre:</strong> " + nombre + "</p>");
-        out.println("<p><strong>Apellido:</strong> " + apellido + "</p>");
+        out.println("<p><strong>Apellidos:</strong> " + apellido + "</p>");
         out.println("<p><strong>Edad:</strong> " + edad + "</p>");
         out.println("<p><strong>Curso:</strong> " + curso + "</p>");
         out.println("<p><strong>Género:</strong> " + genero + "</p>");
